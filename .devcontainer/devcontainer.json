@@ -1,0 +1,15 @@
+{
+  "name": "Java 25 and Rapaio",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12",
+      "installJupyterlab": true
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "25",
+      "jdkDistro": "temurin"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}
